@@ -64,10 +64,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-github+hexo搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-最新版github+hexo搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2022/03/31/github+hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time datetime="2022-03-31T09:17:16.538Z" itemprop="datePublished">2022-03-31</time>
+    <a href="/2022/04/01/%E6%9C%80%E6%96%B0%E7%89%88github+hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time datetime="2022-04-01T05:47:03.800Z" itemprop="datePublished">2022-04-01</time>
 </a>
     
   </div>
@@ -84,23 +84,23 @@
 </blockquote>
 <p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">node.js下载网址</a></p>
 <p>安装完成后运行cmd查看版本号</p>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648716398181.png" alt="1648716398181"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/node.js%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt="image-20220401133507503"></p>
 <p><strong>2、安装git</strong></p>
 <p> <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">git下载网址</a> </p>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648716532309.png" alt="1648716532309"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/git%E6%9F%A5%E5%85%B0%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt="1648716532309"></p>
 <blockquote>
 <p> 安装完git后，随便进入一个文件夹，右键，然后点击git bash here，就可以进入git的命令行</p>
 </blockquote>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648717982471.png" alt="1648717982471"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/git%E5%91%BD%E4%BB%A4%E8%A1%8C.png" alt="1648717982471"></p>
 <p><strong>3、安装hexo</strong></p>
 <blockquote>
 <p>使用node.js下的npm命令安装hexo</p>
 </blockquote>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648716606752.png" alt="1648716606752"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E5%AE%89%E8%A3%85hexo.png" alt="1648716606752"></p>
 <h2 id="二、搭建github仓库"><a href="#二、搭建github仓库" class="headerlink" title="二、搭建github仓库"></a>二、搭建github仓库</h2><blockquote>
 <p>原理：利用github的仓库作为hexo博客的服务器</p>
 </blockquote>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648717101101.png" alt="1648717101101"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt="1648717101101"></p>
 <p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648717323792.png" alt="1648717323792"></p>
 <blockquote>
 <p>完成后滑到下面点击绿色的按键，完成仓库的创建</p>
@@ -109,32 +109,32 @@
 <h2 id="三、绑定ssh公钥"><a href="#三、绑定ssh公钥" class="headerlink" title="三、绑定ssh公钥"></a>三、绑定ssh公钥</h2><p><strong>1、生成ssh</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;github绑定的邮箱地址&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648718152940.png" alt="1648718152940"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E7%94%9F%E6%88%90sshkey.png" alt="1648718152940"></p>
 <blockquote>
 <p>运行完这条命令后，在本地用户下就会生成一个.ssh文件夹，然后编辑这个文件夹下的id_rsaj.pub文件，这就是生成的ssh公钥，全部复制</p>
 </blockquote>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648730705478.png" alt="1648730705478"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E5%85%AC%E9%92%A5%E5%9C%B0%E5%9D%80.png" alt="1648730705478"></p>
 <p><strong>2、绑定ssh公钥</strong></p>
 <blockquote>
 <p>进入github，找到setting点击进入</p>
 </blockquote>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648730817746.png" alt="1648730817746"></p>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648730833233.png" alt="1648730833233"></p>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648730841410.png" alt="1648730841410"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E7%BB%91%E5%AE%9Assh%E5%85%AC%E9%92%A51.png" alt="1648730817746"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E7%BB%91%E5%AE%9Assh2.png" alt="1648730833233"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E7%BB%91%E5%AE%9Assh%E5%85%AC%E9%92%A53.png" alt="1648730841410"></p>
 <p><strong>3、测试ssh是否绑定</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648730925033.png" alt="1648730925033"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E6%B5%8B%E8%AF%95ssh%E7%BB%91%E5%AE%9A.png" alt="1648730925033"></p>
 <h2 id="四、搭建在线博客"><a href="#四、搭建在线博客" class="headerlink" title="四、搭建在线博客"></a>四、搭建在线博客</h2><p><strong>1、首先初始化博客</strong></p>
 <blockquote>
 <p>在本地进入你存放博客的文件夹,右键进入git bash here</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648731352782.png" alt="1648731352782"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8D%9A%E5%AE%A2.png" alt="1648731352782"></p>
 <p><strong>2、编辑_config.yml文件</strong></p>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648731773880.png" alt="1648731773880"></p>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648731700129.png" alt="1648731700129"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E7%BC%96%E8%BE%91_config.yml%E6%96%87%E4%BB%B6.png" alt="1648731773880"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/_config.yml%E6%96%87%E4%BB%B6.png" alt="1648731700129"></p>
 <blockquote>
 <p>注：branch那一定要写main,自从github最近更新后，主分支已经从master变成了main</p>
 </blockquote>
@@ -144,24 +144,24 @@
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648731923363.png" alt="1648731923363"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E5%AE%89%E8%A3%85%E5%8D%9A%E5%AE%A2%E5%8F%91%E9%83%A8%E5%B7%A5%E5%85%B7.png" alt="1648731923363"></p>
 <blockquote>
 <p>注：在安装这个插件时，如果报错，尝试：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648732091029.png" alt="1648732091029"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E7%AC%AC%E4%BA%8C%E7%A7%8D%E6%96%B9%E6%B3%95%E5%AE%89%E8%A3%85%E5%8D%9A%E5%AE%A2%E5%AE%89%E8%A3%85%E5%B7%A5%E5%85%B7.png" alt="1648732091029"></p>
 <p>如果没有cnmp这条命令，先安装cnmp</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 </blockquote>
 <p><strong>4、生成页面文件</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648732149305.png" alt="1648732149305"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/hexo%20g.png" alt="1648732149305"></p>
 <p><strong>5、把本地文件上传到github仓库</strong></p>
 <p>运行完这条命令就基于github生成我们自己的博客了</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648732255450.png" alt="1648732255450"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/hexo%20d.png" alt="1648732255450"></p>
 <blockquote>
 <p>如果这条报错，执行：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config –global core.autocrlf false</span><br></pre></td></tr></table></figure>
@@ -172,19 +172,19 @@
 <h2 id="五、访问博客"><a href="#五、访问博客" class="headerlink" title="五、访问博客"></a>五、访问博客</h2><blockquote>
 <p>进入前面搭好的git仓库，找到settings进入，然后找到pages，里面就有你博客的访问地址，划红线的就是你的博客地址了</p>
 </blockquote>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648733230024.png" alt="1648733230024"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E5%9C%B0%E5%9D%80.png" alt="1648733230024"></p>
 <p>你可能会发现我把博客的地址改成了<a target="_blank" rel="noopener" href="https://77wwm8.ltd,那是因为我在阿里云购买了77wwm8.ltd这个域名./">https://77wwm8.ltd，那是因为我在阿里云购买了77wwm8.ltd这个域名。</a></p>
 <p>你也可以更改默认访问地址，默认访问地址就是https://+”你的仓库名“，并且改完后默认地址也可以访问你的博客。</p>
 <blockquote>
 <p>仔细看我上面那张图的最下面，你会发现域名就是在那改的，哈哈哈哈哈！</p>
 </blockquote>
 <p><strong>这就是博客搭建完成后的样子</strong></p>
-<p><img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\1648733728472.png" alt="1648733728472"></p>
+<p><img src="https://raw.githubusercontent.com/tanzhouhao/picgo/main/photo/%E5%8D%9A%E5%AE%A2%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="1648733728472"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/31/github+hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="cl1f1or93000008vs226iciku" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/04/01/%E6%9C%80%E6%96%B0%E7%89%88github+hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="cl1g0aesa0000xkvs48ck3u53" class="article-share-link">Share</a>
       
       
     </footer>
@@ -261,7 +261,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li></ul>
     </div>
   </div>
 
@@ -274,7 +274,7 @@
       <ul>
         
           <li>
-            <a href="/2022/03/31/github+hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">(no title)</a>
+            <a href="/2022/04/01/%E6%9C%80%E6%96%B0%E7%89%88github+hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">(no title)</a>
           </li>
         
           <li>
